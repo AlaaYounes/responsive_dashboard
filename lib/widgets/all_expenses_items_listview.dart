@@ -23,26 +23,29 @@ class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3, crossAxisSpacing: 12),
-      itemBuilder: (context, index) => GestureDetector(
-        onTap: () {
-          setState(() {
-            if (activeIndex != index) {
-              activeIndex = index;
-              log('$activeIndex');
-            }
-          });
-        },
-        child: AllExpensesItem(
-          itemModel: items[index],
-          isActive: activeIndex == index,
+    return Row(
+        children: items.asMap().entries.map((e) {
+      int index = e.key;
+      var item = e.value;
+      return Expanded(
+        child: GestureDetector(
+          onTap: () {
+            setState(() {
+              if (activeIndex != index) {
+                activeIndex = index;
+                log('$activeIndex');
+              }
+            });
+          },
+          child: Padding(
+            padding: index > 0 && index < items.length - 1
+                ? const EdgeInsets.symmetric(horizontal: 12)
+                : EdgeInsets.zero,
+            child: AllExpensesItem(
+                itemModel: item, isActive: activeIndex == index),
+          ),
         ),
-      ),
-      itemCount: items.length,
-    );
+      );
+    }).toList());
   }
 }

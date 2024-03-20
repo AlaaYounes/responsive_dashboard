@@ -44,10 +44,8 @@ class ActiveAllExpensesItem extends StatelessWidget {
               ),
             ],
           ),
-          const Expanded(
-            child: SizedBox(
-              height: 34,
-            ),
+          SizedBox(
+            height: 34,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,6 +53,9 @@ class ActiveAllExpensesItem extends StatelessWidget {
               Text(
                 itemModel.title,
                 style: AppStyles.styleSemiBold16.copyWith(color: Colors.white),
+              ),
+              SizedBox(
+                height: 8,
               ),
               Text(
                 'April 2022',
@@ -65,7 +66,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
                 height: 16,
               ),
               Text(
-                '#20,129',
+                r'$20,129',
                 style: AppStyles.styleSemiBold24.copyWith(color: Colors.white),
               ),
             ],

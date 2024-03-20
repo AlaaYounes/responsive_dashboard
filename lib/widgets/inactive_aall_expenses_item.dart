@@ -44,10 +44,8 @@ class InActiveAllExpensesItem extends StatelessWidget {
               ),
             ],
           ),
-          const Expanded(
-            child: SizedBox(
-              height: 34,
-            ),
+          const SizedBox(
+            height: 34,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,6 +53,9 @@ class InActiveAllExpensesItem extends StatelessWidget {
               Text(
                 itemModel.title,
                 style: AppStyles.styleSemiBold16,
+              ),
+              const SizedBox(
+                height: 8,
               ),
               Text(
                 'April 2022',
@@ -64,7 +65,7 @@ class InActiveAllExpensesItem extends StatelessWidget {
                 height: 16,
               ),
               Text(
-                '#20,129',
+                r'$20,129',
                 style: AppStyles.styleSemiBold24,
               ),
             ],

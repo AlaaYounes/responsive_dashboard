@@ -38,7 +38,7 @@ class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
             });
           },
           child: Padding(
-            padding: index > 0 && index < items.length - 1
+            padding: index == 1
                 ? const EdgeInsets.symmetric(horizontal: 12)
                 : EdgeInsets.zero,
             child: AllExpensesItem(

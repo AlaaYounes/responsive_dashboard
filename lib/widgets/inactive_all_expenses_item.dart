@@ -24,12 +24,20 @@ class InActiveAllExpensesItem extends StatelessWidget {
         children: [
           Row(
             children: [
-              CircleAvatar(
-                backgroundColor: const Color(0xffFAFAFA),
-                radius: 30,
-                child: SvgPicture.asset(
-                  itemModel.image,
-                  color: const Color(0xff4EB7F2),
+              Expanded(
+                child: Container(
+                  height: 60,
+                  width: 60,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xffFAFAFA),
+                  ),
+                  child: Center(
+                    child: SvgPicture.asset(
+                      itemModel.image,
+                      color: const Color(0xff4EB7F2),
+                    ),
+                  ),
                 ),
               ),
               const Expanded(

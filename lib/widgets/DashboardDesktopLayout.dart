@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/views/tablet_view.dart';
 import 'package:responsive_dashboard/widgets/custom_drawer.dart';
+import 'package:responsive_dashboard/widgets/my_card.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
   const DashboardDesktopLayout({super.key});
@@ -16,9 +17,10 @@ class DashboardDesktopLayout extends StatelessWidget {
           width: 32,
         ),
         Expanded(
-          flex: 2,
+          flex: 3,
           child: TabletView(),
         ),
+        Expanded(flex: 2, child: MyCard()),
       ],
     );
   }

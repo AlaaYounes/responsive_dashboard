@@ -10,9 +10,10 @@ class Assets {
   static const String imagesAvatar3 = 'assets/images/avatar_3.svg';
   static const String imagesBalance = 'assets/images/balance.svg';
   static const String imagesCardBackground =
-      'assets/images/card_background.svg';
+      'assets/images/card_background.png';
   static const String imagesDashboard = 'assets/images/dashboard.svg';
   static const String imagesExpenses = 'assets/images/expenses.svg';
+  static const String imagesGallery = 'assets/images/gallery.svg';
   static const String imagesIncome = 'assets/images/income.svg';
   static const String imagesLogout = 'assets/images/logout.svg';
   static const String imagesMyInvestments = 'assets/images/my_investments.svg';
@@ -44,9 +45,11 @@ class Assets {
       'lib/widgets/all_expenses_item.dart';
   static const String widgetsAllExpensesItemsListview =
       'lib/widgets/all_expenses_items_listview.dart';
+  static const String widgetsCardItem = 'lib/widgets/card_item.dart';
   static const String widgetsCustomBackgroundContainer =
       'lib/widgets/custom_background_container.dart';
   static const String widgetsCustomButton = 'lib/widgets/custom_button.dart';
+  static const String widgetsCustomDot = 'lib/widgets/custom_dot.dart';
   static const String widgetsCustomDrawer = 'lib/widgets/custom_drawer.dart';
   static const String widgetsCustomFormField =
       'lib/utils/widgets/custom_form_field.dart';
@@ -54,15 +57,19 @@ class Assets {
       'lib/widgets/custom_text_field.dart';
   static const String widgetsDashboardDesktopLayout =
       'lib/widgets/DashboardDesktopLayout.dart';
+  static const String widgetsDotsIndicator = 'lib/widgets/dots_indicator.dart';
   static const String widgetsDrawItemsListview =
       'lib/widgets/draw_items_listview.dart';
   static const String widgetsDrawerItem = 'lib/widgets/drawer_item.dart';
-  static const String widgetsInactiveAallExpensesItem =
-      'lib/widgets/inactive_aall_expenses_item.dart';
+  static const String widgetsInactiveAllExpensesItem =
+      'lib/widgets/inactive_all_expenses_item.dart';
   static const String widgetsLatestTransactionListview =
       'lib/widgets/latest_transaction_listview.dart';
   static const String widgetsLatestTransction =
       'lib/widgets/latest_transction.dart';
+  static const String widgetsMyCard = 'lib/widgets/my_card.dart';
+  static const String widgetsMyCardsPageview =
+      'lib/widgets/my_cards_pageview.dart';
   static const String widgetsQuickInvoice = 'lib/widgets/quick_invoice.dart';
   static const String widgetsQuickInvoiceForm =
       'lib/widgets/quick_invoice_form.dart';

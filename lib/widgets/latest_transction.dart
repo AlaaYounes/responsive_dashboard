@@ -3,7 +3,7 @@ import 'package:responsive_dashboard/utils/app_styles.dart';
 import 'package:responsive_dashboard/widgets/latest_transaction_listview.dart';
 
 class LatestTransaction extends StatelessWidget {
-  LatestTransaction({super.key});
+  const LatestTransaction({super.key});
 
   @override
   Widget build(BuildContext context) {

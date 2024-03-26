@@ -24,12 +24,25 @@ class ActiveAllExpensesItem extends StatelessWidget {
         children: [
           Row(
             children: [
-              CircleAvatar(
-                backgroundColor: Colors.white.withOpacity(.10),
-                radius: 30,
-                child: SvgPicture.asset(
-                  itemModel.image,
-                  color: Colors.white,
+              Flexible(
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 60),
+                  child: AspectRatio(
+                    aspectRatio: 1,
+                    child: Container(
+                      decoration: ShapeDecoration(
+                        shape: const OvalBorder(),
+                        color: Colors.white.withOpacity(.10),
+                      ),
+                      child: Center(
+                        child: SvgPicture.asset(
+                          itemModel.image,
+                          colorFilter: const ColorFilter.mode(
+                              Colors.white, BlendMode.srcIn),
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
               ),
               const Expanded(
@@ -44,30 +57,41 @@ class ActiveAllExpensesItem extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 34,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                itemModel.title,
-                style: AppStyles.styleSemiBold16.copyWith(color: Colors.white),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  itemModel.title,
+                  style: AppStyles.styleSemiBold16(context)
+                      .copyWith(color: Colors.white),
+                ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
-              Text(
-                'April 2022',
-                style: AppStyles.styleRegular14
-                    .copyWith(color: const Color(0xffFAFAFA)),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  'April 2022',
+                  style: AppStyles.styleRegular14(context)
+                      .copyWith(color: const Color(0xffFAFAFA)),
+                ),
               ),
               const SizedBox(
                 height: 16,
               ),
-              Text(
-                r'$20,129',
-                style: AppStyles.styleSemiBold24.copyWith(color: Colors.white),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  r'$20,129',
+                  style: AppStyles.styleSemiBold24(context)
+                      .copyWith(color: Colors.white),
+                ),
               ),
             ],
           ),

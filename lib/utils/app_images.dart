@@ -18,4 +18,5 @@ class Assets {
   static const String imagesStatistics = 'assets/images/statistics.svg';
   static const String imagesWallet = 'assets/images/wallet.svg';
   static const String imagesGallery = 'assets/images/gallery.svg';
+  static const String imagesIncomeChart = 'assets/images/income_chart.svg';
 }

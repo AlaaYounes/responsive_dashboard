@@ -40,9 +40,10 @@ class CustomFormField extends StatelessWidget {
       obscureText: isPassword,
       keyboardType: keyboardType,
       decoration: InputDecoration(
-        labelStyle: AppStyles.styleMedium16,
+        labelStyle: AppStyles.styleMedium16(context),
         hintText: hintText,
-        hintStyle: AppStyles.styleRegular16.copyWith(color: Color(0xffAAAAAA)),
+        hintStyle: AppStyles.styleRegular16(context)
+            .copyWith(color: Color(0xffAAAAAA)),
         fillColor: backgroundColor,
         filled: true,
         enabled: true,

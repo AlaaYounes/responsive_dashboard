@@ -24,18 +24,23 @@ class InActiveAllExpensesItem extends StatelessWidget {
         children: [
           Row(
             children: [
-              Expanded(
-                child: Container(
-                  height: 60,
-                  width: 60,
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Color(0xffFAFAFA),
-                  ),
-                  child: Center(
-                    child: SvgPicture.asset(
-                      itemModel.image,
-                      color: const Color(0xff4EB7F2),
+              Flexible(
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 60),
+                  child: AspectRatio(
+                    aspectRatio: 1,
+                    child: Container(
+                      decoration: const ShapeDecoration(
+                        shape: OvalBorder(),
+                        color: Color(0xffFAFAFA),
+                      ),
+                      child: Center(
+                        child: SvgPicture.asset(
+                          itemModel.image,
+                          colorFilter: const ColorFilter.mode(
+                              Color(0xff4EB7F2), BlendMode.srcIn),
+                        ),
+                      ),
                     ),
                   ),
                 ),
@@ -58,23 +63,32 @@ class InActiveAllExpensesItem extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                itemModel.title,
-                style: AppStyles.styleSemiBold16,
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  itemModel.title,
+                  style: AppStyles.styleSemiBold16(context),
+                ),
               ),
               const SizedBox(
                 height: 8,
               ),
-              Text(
-                'April 2022',
-                style: AppStyles.styleRegular14,
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  'April 2022',
+                  style: AppStyles.styleRegular14(context),
+                ),
               ),
               const SizedBox(
                 height: 16,
               ),
-              Text(
-                r'$20,129',
-                style: AppStyles.styleSemiBold24,
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  r'$20,129',
+                  style: AppStyles.styleSemiBold24(context),
+                ),
               ),
             ],
           ),

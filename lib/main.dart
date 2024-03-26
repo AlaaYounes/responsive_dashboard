@@ -1,6 +1,12 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/responsive_dashboard.dart';
 
 void main() {
-  runApp(const ResponsiveDashboard());
+  runApp(
+    DevicePreview(
+      enabled: true,
+      builder: (BuildContext context) => const ResponsiveDashboard(),
+    ),
+  );
 }

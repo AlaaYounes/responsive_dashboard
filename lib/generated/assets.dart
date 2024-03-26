@@ -15,6 +15,7 @@ class Assets {
   static const String imagesExpenses = 'assets/images/expenses.svg';
   static const String imagesGallery = 'assets/images/gallery.svg';
   static const String imagesIncome = 'assets/images/income.svg';
+  static const String imagesIncomeChart = 'assets/images/income_chart.svg';
   static const String imagesLogout = 'assets/images/logout.svg';
   static const String imagesMyInvestments = 'assets/images/my_investments.svg';
   static const String imagesMyTransaction = 'assets/images/my_transaction.svg';
@@ -27,11 +28,21 @@ class Assets {
       'lib/models/all_expenses_item_model.dart';
   static const String modelsDrawerItemModel =
       'lib/models/drawer_item_model.dart';
+  static const String modelsIncomeItemModel =
+      'lib/models/income_item_model.dart';
+  static const String modelsTransactionHistoryModel =
+      'lib/models/transaction_history_model.dart';
   static const String modelsUserInfoModel = 'lib/models/user_info_model.dart';
   static const String utilsAppImages = 'lib/utils/app_images.dart';
   static const String utilsAppStyles = 'lib/utils/app_styles.dart';
+  static const String utilsSizeConfig = 'lib/utils/size_config.dart';
+  static const String viewsDashboardDesktopLayout =
+      'lib/views/DashboardDesktopLayout.dart';
+  static const String viewsDashboardMobileLayout =
+      'lib/views/dashboard_mobile_layout.dart';
+  static const String viewsDashboardTabletLayout =
+      'lib/views/dashboard_tablet_layout.dart';
   static const String viewsDashboardView = 'lib/views/dashboard_view.dart';
-  static const String viewsTabletView = 'lib/views/tablet_view.dart';
   static const String widgetsActiveAllExpensesItem =
       'lib/widgets/active_all_expenses_item.dart';
   static const String widgetsActiveAndInactiveDrawerItem =
@@ -39,12 +50,16 @@ class Assets {
   static const String widgetsAdaptiveLayoutWidget =
       'lib/widgets/adaptive_layout_widget.dart';
   static const String widgetsAllExpenses = 'lib/widgets/all_expenses.dart';
+  static const String widgetsAllExpensesAndQuickInvoice =
+      'lib/widgets/all_expenses_and_quick_invoice.dart';
   static const String widgetsAllExpensesHeader =
       'lib/widgets/all_expenses_header.dart';
   static const String widgetsAllExpensesItem =
       'lib/widgets/all_expenses_item.dart';
   static const String widgetsAllExpensesItemsListview =
       'lib/widgets/all_expenses_items_listview.dart';
+  static const String widgetsCardAndIncomeSections =
+      'lib/widgets/card_and_income_sections.dart';
   static const String widgetsCardItem = 'lib/widgets/card_item.dart';
   static const String widgetsCustomBackgroundContainer =
       'lib/widgets/custom_background_container.dart';
@@ -55,14 +70,22 @@ class Assets {
       'lib/utils/widgets/custom_form_field.dart';
   static const String widgetsCustomTextField =
       'lib/widgets/custom_text_field.dart';
-  static const String widgetsDashboardDesktopLayout =
-      'lib/widgets/DashboardDesktopLayout.dart';
+  static const String widgetsDetailedIncomeChart =
+      'lib/widgets/detailed_income_chart.dart';
   static const String widgetsDotsIndicator = 'lib/widgets/dots_indicator.dart';
   static const String widgetsDrawItemsListview =
       'lib/widgets/draw_items_listview.dart';
   static const String widgetsDrawerItem = 'lib/widgets/drawer_item.dart';
   static const String widgetsInactiveAllExpensesItem =
       'lib/widgets/inactive_all_expenses_item.dart';
+  static const String widgetsIncomeChart = 'lib/widgets/income_chart.dart';
+  static const String widgetsIncomeChartSection =
+      'lib/widgets/income_chart_section.dart';
+  static const String widgetsIncomeSection = 'lib/widgets/income_section.dart';
+  static const String widgetsIncomeSectionHeader =
+      'lib/widgets/income_section_header.dart';
+  static const String widgetsIncomeSectionItem =
+      'lib/widgets/income_section_item.dart';
   static const String widgetsLatestTransactionListview =
       'lib/widgets/latest_transaction_listview.dart';
   static const String widgetsLatestTransction =
@@ -75,6 +98,14 @@ class Assets {
       'lib/widgets/quick_invoice_form.dart';
   static const String widgetsQuickInvoiceHeader =
       'lib/widgets/quick_invoice_header.dart';
+  static const String widgetsTransactionHistory =
+      'lib/widgets/transaction_history.dart';
+  static const String widgetsTransactionHistoryHeader =
+      'lib/widgets/transaction_history_header.dart';
+  static const String widgetsTransactionHistoryItem =
+      'lib/widgets/transaction_history_item.dart';
+  static const String widgetsTransactionHistoryListview =
+      'lib/widgets/transaction_history_listview.dart';
   static const String widgetsUserInfoListTile =
       'lib/widgets/user_info_listTile.dart';
 }

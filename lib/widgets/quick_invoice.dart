@@ -23,10 +23,10 @@ class QuickInvoice extends StatelessWidget {
             height: 48,
             color: Color(0xffF1F1F1),
           ),
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 24),
-            child: CustomTextFieldListView(),
+          SizedBox(
+            height: 24,
           ),
+          CustomTextFieldListView(),
         ],
       ),
     );
